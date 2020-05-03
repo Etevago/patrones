@@ -2,10 +2,10 @@
 <html lang="es">
 
 <head>
-  <title>Patrones de dise�oo. Singleton</title>
+  <title>Patrones de diseï¿½oo. Singleton</title>
   <link rel="stylesheet" href="../css/screen.css" type="text/css" media="all">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta name="author" content="Jordi Codevila">
+  <meta name="author" content="Jesús Senén">
 </head>
 
 <body>
@@ -58,37 +58,37 @@
     <p><a href="../index.html">Volver a la pagina principal</a></p>
     <h1>Singleton</h1>
 
-    <h3>Ámbito de uso</h3>
+    <h3>Ã�mbito de uso</h3>
 
-    <p>El objetivo de este patrón es el de garantizar que una clase solo tenga una instancia (o ejemplar) y proporcionar un punto de acceso global a ella.</p>
+    <p>El objetivo de este patrÃ³n es el de garantizar que una clase solo tenga una instancia (o ejemplar) y proporcionar un punto de acceso global a ella.</p>
 
     <h3>Utilidad</h3>
 
-    <p>Es un patrón empleado habitualmente para las conexiones a bases de datos. Otros usos incluyen: logging, caches, thread pools, configuration settings, device driver objects.</p>
+    <p>Es un patrÃ³n empleado habitualmente para las conexiones a bases de datos. Otros usos incluyen: logging, caches, thread pools, configuration settings, device driver objects.</p>
 
-    <h3>Cómo funciona</h3>
+    <h3>CÃ³mo funciona</h3>
 
-    <p>Este patrón se implementa haciendo privado el constructor de la clase y creando (en la propia clase) un método que crea una instancia del objeto si este no existe. Además, para mejorar su implementación se suele sobreescribir el método clone() para que no permita ser clonado.</p>
+    <p>Este patrÃ³n se implementa haciendo privado el constructor de la clase y creando (en la propia clase) un mÃ©todo que crea una instancia del objeto si este no existe. AdemÃ¡s, para mejorar su implementaciÃ³n se suele sobreescribir el mÃ©todo clone() para que no permita ser clonado.</p>
 
     <h3>Ejemplo</h3>
 
-    <p>En el siguiente ejemplo se aprecia como la clase SoyUnico dispone de un constructor privado al que solo se podrá acceder mediante un método, en este caso getSingletonInstance() que será
+    <p>En el siguiente ejemplo se aprecia como la clase SoyUnico dispone de un constructor privado al que solo se podrÃ¡ acceder mediante un mÃ©todo, en este caso getSingletonInstance() que serÃ¡
     el encargado de crear una instancia de esta clase en caso de no haberse creado previamente.</p>
 
     <img src="../img/singleton-clase.png" alt="Clase Singleton." class="imagen_singleton">
     <img src="../img/singleton-main.png" alt="Clase main que usa la clase singleton." class="imagen_singleton">
-    <img src="../img/singleton-resultado.png" alt="Código resultante al aplicar la clase singleton." class="imagen_singleton">
+    <img src="../img/singleton-resultado.png" alt="CÃ³digo resultante al aplicar la clase singleton." class="imagen_singleton">
 
-    <p>Por último sobreescribimos el método clone:</p>
+    <p>Por Ãºltimo sobreescribimos el mÃ©todo clone:</p>
 
-    <img src="../img/singleton-clone.png" alt="Sobreescritura del método clone." class="imagen_singleton">
+    <img src="../img/singleton-clone.png" alt="Sobreescritura del mÃ©todo clone." class="imagen_singleton">
     <img src="../img/singleton-clone-main.png" alt="Intento de clonar nuestra clase Singleton." class="imagen_singleton">
-    <img src="../img/singleton-resultado-clone.png" alt="Código resultante al intentar clonar nuestra clase singleton." class="imagen_singleton">
+    <img src="../img/singleton-resultado-clone.png" alt="CÃ³digo resultante al intentar clonar nuestra clase singleton." class="imagen_singleton">
 
 
-    <h3>Referencia bibliográfica</h3>
+    <h3>Referencia bibliogrÃ¡fica</h3>
 
-    <p><a href="https://jarroba.com/patron-singleton-en-java-con-ejemplos/">Jarroba, patrón Singleton</a>
+    <p><a href="https://jarroba.com/patron-singleton-en-java-con-ejemplos/">Jarroba, patrÃ³n Singleton</a>
 
 
 
